@@ -1,0 +1,21 @@
+{
+  "name": "cypress-type-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open --component",
+    "test": "cypress run --component"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^12.8.1",
+    "cypress-lit": "^0.0.7",
+    "lit": "^2.7.0",
+    "sass": "^1.59.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "vite": "4.1.4"
+  }
+}
