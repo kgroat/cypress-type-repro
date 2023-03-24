@@ -12,21 +12,9 @@ export class MyComponent extends LitElement {
 
   @property({ type: Boolean, reflect: true }) open = false;
 
-  connectedCallback() {
-    super.connectedCallback();
-    document.addEventListener('click', this.handleDocClick.bind(this));
-  }
-
   private async handleClick() {
     if (this.open) return;
     this.open = true;
-    await this.updateComplete;
-    this.popup.focus();
-  }
-
-  private async handleDocClick(e: FocusEvent) {
-    if (e.target === this) return
-    this.open = false;
     await this.updateComplete;
     this.popup.focus();
   }
